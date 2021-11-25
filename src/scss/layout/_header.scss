@@ -1,0 +1,10 @@
+.header__menu {
+  background-color: $backgrColorMenu;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+}

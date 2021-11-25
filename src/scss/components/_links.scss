@@ -1,0 +1,122 @@
+.header__menu {
+  transition: all 0.3s ease-in;
+  &:hover {
+    height: 54px;
+    width: 54px;
+    background-color: $colorBtns;
+  }
+  &:active {
+    background-color: $backgrColorMenu;
+  }
+}
+
+.hero__arrow {
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: $colorBtns;
+    box-shadow: 0px -5px 10px rgba($colorPpal, 0.5);
+    height: 50px;
+    width: 50px;
+    padding-top: 20px;
+  }
+  &:hover .hero__arrow--size {
+    height: 13.2px;
+    width: 22px;
+  }
+  &:hover .hero__arrow--color {
+    fill: $colorPpal;
+  }
+  &:active {
+    background-color: $colorPpal;
+  }
+  &:active .hero__arrow--color {
+    fill: $colorBtns;
+  }
+}
+
+.tips__btn {
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: $colorBtns;
+    color: $colorPpal;
+    box-shadow: 0px 5px 10px rgba($colorScnd, 0.3);
+    font-size: rem(22px);
+    transform: translateY(-3px);
+    background-position: bottom;
+  }
+  &:active {
+    background-color: $colorPpal;
+    color: $colorBtns;
+  }
+}
+
+.purchase__btn {
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: $colorPpal;
+    color: $colorBtns;
+    box-shadow: 0px 5px 10px rgba($colorScnd, 0.3);
+    font-size: rem(22px);
+    transform: translateY(-3px);
+  }
+  &:active {
+    background-color: $colorBtns;
+    color: $colorPpal;
+  }
+}
+
+.footer__arrow {
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: $colorBtns;
+    box-shadow: 0px 5px 10px rgba($colorScnd, 0.5);
+    height: 50px;
+    width: 50px;
+  }
+  &:hover .footer__arrow--size {
+    height: 26px;
+    width: 24px;
+  }
+  &:hover .footer__arrow--color {
+    fill: $colorPpal;
+  }
+  &:active {
+    background-color: $colorPpal;
+  }
+  &:active .footer__arrow--color {
+    fill: $colorBtns;
+  }
+}
+
+.footer__nav--item {
+  transition: all 0.2s linear;
+  position: relative;
+  &:visited {
+    color: #7e86cc;
+  }
+  &::before {
+    content: "";
+    transform: scaleX(0);
+    width: 110%;
+    height: 2px;
+    bottom: -3.5px;
+    left: -5%;
+    background-color: $colorBtns;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.3s linear;
+  }
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  &:active:before {
+    background-color: $colorPpal;
+  }
+  &:hover {
+    color: $colorBtns;
+  }
+  &:active {
+    color: $colorPpal;
+  }
+}

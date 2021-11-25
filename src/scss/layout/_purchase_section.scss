@@ -1,0 +1,90 @@
+.purchase {
+  background-color: $backgrColorPurchase;
+  padding: 30px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @include desktop {
+    padding-top: 60px;
+  }
+  &__container {
+    @include tablet {
+      width: 690px;
+    }
+    @include desktop {
+      width: 1110px;
+    }
+  }
+  &__title {
+    color: $colorScnd;
+    font-family: $fontTitle;
+    font-size: rem(24px);
+    line-height: rem(30px);
+    text-transform: capitalize;
+    @include tablet {
+      font-size: rem(26px);
+      line-height: rem(45px);
+    }
+    @include desktop {
+      font-size: rem(32px);
+    }
+  }
+  &__articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 70px 45px;
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      margin: 45px 0 60px;
+      grid-gap: 30px;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    width: 184px;
+    height: 45px;
+    background-color: $colorBtns;
+    border: none;
+    border-radius: 22.5px;
+    color: $colorPpal;
+    font-family: $fontText;
+    font-size: rem(20px);
+    font-weight: 500;
+    line-height: rem(45px);
+    @include tablet {
+      width: 210px;
+    }
+    @include desktop {
+      width: 255px;
+    }
+  }
+}
+
+.article__content {
+  margin-top: 45px;
+  @include tablet {
+    margin: 0;
+  }
+  &--title {
+    color: $colorScnd;
+    font-family: $fontTitle;
+    font-size: rem(18px);
+    line-height: rem(30px);
+    @include tablet {
+      font-size: rem(24px);
+    }
+  }
+  &--text {
+    color: $colorScnd;
+    font-family: $fontText;
+    font-size: rem(18px);
+    line-height: rem(30px);
+    @include tablet {
+      font-size: rem(20px);
+      margin-top: 14px;
+    }
+  }
+}

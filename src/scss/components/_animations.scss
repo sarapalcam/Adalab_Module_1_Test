@@ -1,0 +1,47 @@
+@keyframes arrowHeroBounce {
+  0% {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -5px);
+  }
+}
+
+@keyframes arrowFooterBounceMobile {
+  0% {
+    transform: translate(0, -80px);
+  }
+  50% {
+    transform: translate(0, -95px);
+  }
+  100% {
+    transform: translate(0, -80px);
+  }
+}
+
+@keyframes arrowFooterBounceTablet {
+  0% {
+    transform: translate(0, -65px);
+  }
+  50% {
+    transform: translate(0, -80px);
+  }
+  100% {
+    transform: translate(0, -65px);
+  }
+}
+
+.hero__arrow {
+  animation: arrowHeroBounce 2s ease-in-out infinite;
+}
+
+.footer__arrow {
+  animation: arrowFooterBounceMobile 2s ease-in-out infinite;
+  @include tablet {
+    transform: translate(0, -65px);
+    animation: arrowFooterBounceTablet 2s ease-in-out infinite;
+  }
+}
